@@ -1,0 +1,141 @@
+    * {
+        box-sizing: border-box;
+    }
+    /*body {
+        background-color: lightgreen;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        body {
+            background-color: lightblue;
+        } */
+    /* Typical Device Breakpoints */
+    
+    .example {
+        padding: 20px;
+        color: white;
+    }
+    /* Extra small devices (phones, 600px and down) */
+    
+    @media only screen and (max-width: 600px) {
+        .example {
+            background: red;
+        }
+    }
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    
+    @media only screen and (min-width: 600px) {
+        .example {
+            background: green;
+        }
+    }
+    /* Medium devices (landscape tablets, 768px and up) */
+    
+    @media only screen and (min-width: 768px) {
+        .example {
+            background: blue;
+        }
+    }
+    /* Large devices (laptops/desktops, 992px and up) */
+    
+    @media only screen and (min-width: 992px) {
+        .example {
+            background: orange;
+        }
+    }
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    
+    @media only screen and (min-width: 1200px) {
+        .example {
+            background: pink;
+        }
+    }
+    /* Hide Elements With Media Queries */
+    
+    div.example2 {
+        background-color: yellow;
+        padding: 20px;
+    }
+    
+    @media screen and (max-width: 600px) {
+        div.example2 {
+            display: none;
+        }
+    }
+    /* Change Font Size With Media Queries */
+    
+    div.example3 {
+        background-color: lightgrey;
+        padding: 20px;
+    }
+    
+    @media screen and (min-width: 600px) {
+        div.example3 {
+            font-size: 80px;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        div.example3 {
+            font-size: 30px;
+        }
+    }
+    /* Responsive navigation menu */
+    /* Style the top navigation bar */
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+    }
+    /* Style the topnav links */
+    
+    .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    /* Change color on hover */
+    
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+    
+    @media screen and (max-width: 600px) {
+        .topnav a {
+            float: none;
+            width: 100%;
+        }
+    }
+    /* Responsive Four Column Layout */
+    
+    .column {
+        float: left;
+        width: 25%;
+        padding: 20px;
+    }
+    /* Clear floats after the columns */
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* On screens that are 992px wide or less, go from four columns to two columns */
+    
+    @media screen and (max-width: 992px) {
+        .column {
+            width: 50%;
+        }
+    }
+    /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+    
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    }
